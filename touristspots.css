@@ -1,0 +1,196 @@
+body {
+    background-image: url(images/7db9091908ab719187a2842ff90ce454.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 0;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+nav li a:hover {
+    background-color: purple;
+    transform: scale(1.1);
+    font-size: 150%;
+}
+
+nav li a:active, nav li a:focus {
+    color: purple;
+    background-color: transparent;
+}
+
+.highlighted-link {
+    color: red;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tourist-spot {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 5.8rem;
+    color: gold ;
+    text-align: center;
+    font-family: Segoe Script;
+}
+p{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.spot-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.spot-img:hover {
+    transform: scale(1.05);
+}
+
+.more-info {
+    background-color: #007BFF;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.more-info:hover {
+    background-color: #ffffff;
+}
+
+.description {
+    display: none;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.description.active {
+    display: block;
+}
+
+.social-icons .icon {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .tourist-spot {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .spot-img {
+        max-height: 150px;
+    }
+
+    .more-info {
+        font-size: 0.9rem;
+    }
+
+    .social-icons .icon {
+        width: 25px;
+    }
+}
+
+footer {
+    background-color:rgb(0, 0, 0);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

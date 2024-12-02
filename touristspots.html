@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgos Tourist Spots</title>
+    <link rel="stylesheet" href="touristspots.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="home" class="logo">
+                <img src="images/Burgos_ilocos_norte_seal_logo.png" alt="Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="history.html">HISTORY</a></li>
+                    <li><a href="festivals.html">FESTIVALS</a></li>
+                    <li><a href="touristspots.html" class="highlighted-link">TOURIST SPOTS</a></li>
+                </ul>
+                <div class="social-icons">
+                    <span>Follow Us:</span>
+                    <a href="https://web.facebook.com/pages/Burgos-Ilocos-Norte/335715713111651" target="_blank">
+                        <img src="images/OIP.jpg" alt="Facebook" class="icon">
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <h1>Tourist Spots</h1>
+        <p>Discover breathtaking destinations in Burgos, Ilocos Norte. Explore pristine beaches, majestic mountains, historic landmarks, and cultural treasures!</p>
+    </header>
+
+    <main>
+        <section class="tourist-spot">
+            <h2>Cape Bojeador Lighthouse</h2>
+            <img src="images/cape.png" alt="Cape Bojeador Lighthouse" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>The Cape Bojeador Lighthouse is a 65-foot-tall octagonal stone tower and the oldest operating lighthouse in the Philippines. Built during the Spanish Colonial period, it still guides vessels navigating the West Philippine Sea.</p>
+            </div>
+        </section>
+        <section class="tourist-spot">
+            <h2>Kaangrian Falls</h2>
+            <img src="images/kaangrian.png" alt="Kaangrian Falls" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>Kaangrian Falls is a multi-layered waterfall with sparkling pools formed by limestone deposits. Located in Barangay Agaga, it is a must-see natural wonder for its breathtaking beauty and rich biodiversity.</p>
+            </div>
+        </section>
+        <section class="tourist-spot">
+            <h2>Graciano Cove</h2>
+            <img src="images/graciano.png" alt="Graciano Cove" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>Graciano Cove, a hidden gem near Cape Bojeador Lighthouse, is known for its deep blue waters, stunning coastal cliffs, and serene beach lagoon. Perfect for adventurers and nature lovers alike.</p>
+            </div>
+        </section>
+        <section class="tourist-spot">
+            <h2>Dragon Fruit Farm (REFMAD)</h2>
+            <img src="images/dragon fruit.png" alt="Dragon Fruit Farm" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>The REFMAD Dragon Fruit Farm in Barangay Paayas offers an immersive farm tourism experience. Visitors can enjoy dragon fruit picking, savor organic products, and relax in its cabanas and swimming pool.</p>
+            </div>
+        </section>
+        <section class="tourist-spot">
+            <h2>Burgos Wind Farm Adventure Park</h2>
+            <img src="images/burgoswindfarm.png" alt="Burgos Wind Farm" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>The Burgos Wind Farm, the largest in Southeast Asia, is both an adventure park and a renewable energy site. Spanning 600 hectares, it offers stunning views and eco-tourism activities.</p>
+            </div>
+        </section>
+        <section class="tourist-spot">
+            <h2>Kapurpurawan Rock Formation</h2>
+            <img src="images/kapurpurawan.png" alt="Kapurpurawan Rock Formation" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>This white limestone formation in Barangay Poblacion is a natural masterpiece shaped by the sea and wind. Visitors can enjoy its beauty from a distance while appreciating its geological significance.</p>
+            </div>
+        </section>
+        <section class="tourist-spot">
+            <h2>Tanap-Avis Falls</h2>
+            <img src="images/avis.jpg" alt="Tanap-Avis Falls" class="spot-img">
+            <button class="more-info">More Info</button>
+            <div class="description">
+                <p>Tanap-Avis Falls is a hidden paradise known for its vibrant colors and serene environment. Located in the forest, it offers a tranquil escape for hiking and swimming enthusiasts.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const buttons = document.querySelectorAll('.more-info');
+        const descriptions = document.querySelectorAll('.description');
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                descriptions[index].classList.toggle('active');
+            });
+        });
+    </script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Burgos, The Pride of Ilocos Norte. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
